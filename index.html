@@ -1,10 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klima Kompasset</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #009200;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .hero {
+            background-image: url('img/markimg.webp');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: white;
+            padding: 100px 20px;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .content-section {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-section img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .content-section div {
+            flex: 1;
+            margin: 0 10px;
+        }
+
+        .footer {
+            background-color: #009200;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
+<header>
+    <img src="img/logowhiteimg.webp" alt="Klima Kompasset">
+    <nav>
+        <ul>
+            <li><a href="#">Genanvend</a></li>
+            <li><a href="#">Vores arbejde</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <li><a href="#">Om os</a></li>
+        </ul>
+    </nav>
+</header>
 
+<div class="hero">
+    <h1>Klima Kompasset</h1>
+    <p>Plastik Reduktion | CO2 Reduktion | Genanvendelse | Energi Besparelse</p>
+</div>
+
+<section class="content-section">
+    <div>
+        <h2>Kommende events</h2>
+        <p>Her finder du en oversigt over oplæg og events med fokus på klima og bæredygtighed, arrangeret af forskellige aktører.</p>
+        <a href="#" style="color: #1a9c41; font-weight: bold;">Se events</a>
+    </div>
+    <img src="img/kalenderimg.webp" alt="Event billede">
+</section>
+
+<section class="content-section">
+    <img src="img/kbhimg.webp" alt="Nyheder billede">
+    <div>
+        <h2>Klima Nyheder</h2>
+        <p>Her finder du en oversigt over de seneste nyheder inden for klima og bæredygtighed.</p>
+        <a href="#" style="color: #1E9c41; font-weight: bold;">Nyheder</a>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>&copy; 2024 Klima Kompasset</p>
+    <p><a href="#">Genveje</a> | <a href="#">Adresse</a> | <a href="#">Om Klima Kompasset</a></p>
+</footer>
 </body>
 </html>
