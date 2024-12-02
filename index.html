@@ -7,7 +7,7 @@
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: Ebrima, sans-serif;
             background: url('img/flourishimg.webp') no-repeat center center fixed;
             background-size: cover;
             color: #4d4d4d; /* Text color for readability */
@@ -48,7 +48,7 @@
             color: #f2f2f2;
             padding: 100px 20px;
             position: relative;
-            background: rgb(77, 77, 77);
+            background: rgba(77, 77, 77, 0.5);
         }
 
         .hero h1 {
@@ -61,7 +61,6 @@
             margin: 10px 0;
         }
 
-
         .content-section {
             display: flex;
             align-items: center;
@@ -69,9 +68,9 @@
             padding: 20px;
             margin: 20px auto;
             max-width: 1200px;
-            background-color: rgb(242, 242, 242);
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
+            box-shadow: none; /* Removed shadow effect */
+            border-radius: 0; /* Removed rounded edges */
+            background: none; /* Removed white background */
         }
 
         .content-section img {
@@ -82,9 +81,11 @@
 
         .content-text {
             flex: 1;
-            padding: 0 20px;
+            padding: 20px;
+            background-color: rgb(0, 146, 0); /* Green background for the text box */
+            color: #f2f2f2; /* White text for contrast */
+            border-radius: 10px; /* Rounded corners for the text box */
         }
-
 
         .section-1 {
             flex-direction: row;
@@ -122,30 +123,25 @@
 
 <div class="hero">
     <h1>Klima Kompasset</h1>
-    <img src="img/" alt="De Fire Verdenshjørner">
     <p>Plastik Reduktion | CO2 Reduktion | Genanvendelse | Energi Besparelse</p>
 </div>
 
-
 <section class="content-section section-1">
-
     <img src="img/kalenderimg.webp" alt="Kalender billede">
     <div class="content-text">
         <h2>Kommende events</h2>
         <p>Her finder du en oversigt over oplæg og events med fokus på klima og bæredygtighed, arrangeret af forskellige aktører.</p>
-        <a href="#" style="color: #009200; font-weight: bold;">Se events</a>
+        <a href="#" style="color: #f2f2f2; font-weight: bold;">Se events</a>
     </div>
 </section>
-
 
 <section class="content-section section-2">
     <img src="img/kbhimg.webp" alt="Nyheder billede">
     <div class="content-text">
         <h2>Klima Nyheder</h2>
         <p>Her finder du en oversigt over de seneste nyheder inden for klima og bæredygtighed.</p>
-        <a href="#" style="color: #009200; font-weight: bold;">Nyheder</a>
+        <a href="#" style="color: #f2f2f2; font-weight: bold;">Nyheder</a>
     </div>
-
 </section>
 
 <footer class="footer">
