@@ -7,7 +7,7 @@
     <style>
         body {
             margin: 0;
-            font-family: Ebrima, sans-serif;
+            font-family: Ebrima, serif;
             background: url('img/flourishimg.webp') no-repeat center center fixed;
             background-size: cover;
             color: #4d4d4d;
@@ -61,38 +61,63 @@
             margin: 10px 0;
         }
 
-        .content-section {
+        /* Events Green Box */
+        .events-box {
+            background-color: rgb(0, 146, 0);
+            color: #f2f2f2;
+            padding: 20px;
+            border-radius: 0px 0px 0px 50px;
+            width: 55%;
             display: flex;
-            align-items: center;
-            justify-content: space-between;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 20px; /* Space between the image and the box */
+        }
+
+        /* News Green Box */
+        .news-box {
+            background-color: rgb(34, 139, 34); /* Slightly darker green for visual distinction */
+            color: #f2f2f2;
+            padding: 20px;
+            border-radius: 0px 0px 50px 0px;
+            width: 55%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-right: 20px; /* Space between the image and the box */
+        }
+
+        /* Events Section */
+        #events-section {
             padding: 20px;
             margin: 20px auto;
             max-width: 1200px;
-            box-shadow: none;
-            border-radius: 0;
-            background: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
 
-        .content-section img {
+        #events-section img {
             width: 40%;
             height: auto;
             border-radius: 10px;
         }
 
-        .content-text {
-            flex: 1;
+        /* News Section */
+        #news-section {
             padding: 20px;
-            background-color: rgb(0, 146, 0);
-            color: #f2f2f2;
-            border-radius: 10px;
-        }
-
-        .section-1 {
-            flex-direction: row;
-        }
-
-        .section-2 {
+            margin: 20px auto;
+            max-width: 1200px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             flex-direction: row-reverse;
+        }
+
+        #news-section img {
+            width: 40%;
+            height: auto;
+            border-radius: 10px;
         }
 
         .footer {
@@ -126,23 +151,23 @@
     <p>Plastik Reduktion | CO2 Reduktion | Genanvendelse | Energi Besparelse</p>
 </div>
 
-<section class="content-section section-1">
+<div id="events-section">
     <img src="img/kalenderimg.webp" alt="Kalender billede">
-    <div class="content-text">
+    <div class="events-box">
         <h2>Kommende events</h2>
         <p>Her finder du en oversigt over oplæg og events med fokus på klima og bæredygtighed, arrangeret af forskellige aktører.</p>
         <a href="#" style="color: #f2f2f2; font-weight: bold;">Se events</a>
     </div>
-</section>
+</div>
 
-<section class="content-section section-2">
+<div id="news-section">
     <img src="img/kbhimg.webp" alt="Nyheder billede">
-    <div class="content-text">
+    <div class="news-box">
         <h2>Klima Nyheder</h2>
         <p>Her finder du en oversigt over de seneste nyheder inden for klima og bæredygtighed.</p>
         <a href="#" style="color: #f2f2f2; font-weight: bold;">Nyheder</a>
     </div>
-</section>
+</div>
 
 <footer class="footer">
     <p>&copy; 2024 Klima Kompasset</p>
