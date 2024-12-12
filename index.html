@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Klima Kompasset</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
             margin: 0;
@@ -16,7 +18,7 @@
         header {
             background-color: rgb(0, 146, 0);
             color: #f2f2f2;
-            padding: 10px 20px;
+            padding: 10px 50px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -43,6 +45,35 @@
             font-size: 16px;
         }
 
+        .hero-image {
+            text-align: center;
+
+        }
+
+        .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+
+        .beskrivelse {
+            background-color: rgb(0, 146, 0);
+            color: white;
+            padding: 15px;
+            margin-left: 40px;
+            margin-top: 30px;
+            border-radius: 0px 50px 50px 0px;
+        }
+        .events {
+            background-color: rgb(0, 146, 0);
+            color: white;
+            padding: 15px;
+            margin-right: 40px;
+            border-radius: 50px 0px 0px 50px;
+        }
         .hero {
             height: 85vh;
             display: flex;
@@ -68,99 +99,98 @@
             object-position: center;
         }
 
-        .compass-container span {
-            position: absolute;
-            font-size: 1.5em;
-            color: #f2f2f2;
-            font-weight: bold;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
-            z-index: 2;
-        }
+        /* Style for the buttons */
         .compass-container a {
             position: absolute;
-            font-size: 1.5em;
-            color: #f2f2f2;
+            font-size: 1.2em;
             font-weight: bold;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
             text-decoration: none;
+            color: #f2f2f2;
             z-index: 2;
+            padding: 10px 20px;
+            border-radius: 50px;
+            transition: background-color 0.3s;
         }
 
         .compass-container a:hover {
-            text-decoration: underline;
+            background-color: rgba(0, 146, 0, 0.7); /* Add a hover effect */
         }
 
-
-        .top-text {
-            top: 10px;
+        /* Positioning the buttons */
+        .top-button {
+            top: 5%;
             left: 50%;
             transform: translateX(-50%);
+            background-color: #1E9CD7;
         }
 
-        .bottom-text {
-            bottom: 20px;
+        .bottom-button {
+            bottom: 5%;
             left: 50%;
             transform: translateX(-50%);
+            background-color: #1E9CD7;
         }
 
-        .right-text {
+        .right-button {
             top: 50%;
-            right: 430px;
+            right: 20%;
             transform: translateY(-50%);
+            background-color: #1E9CD7;
         }
 
-        .left-text {
+        .left-button {
             top: 50%;
-            left: 410px;
+            left: 20%;
             transform: translateY(-50%);
+            background-color: #1E9CD7;
         }
 
-        .green-box {
-            background-color: rgb(0, 146, 0);
-            color: #f2f2f2;
-            padding: 20px;
-            text-align: left;
-            border-radius: 0 50px 50px 0;
-            margin: 20px 0;
-            width: 700px;
+
+
+        .news-section {
+            padding: 40px 20px;
+            background-color: transparent;
+        }
+
+        .news-section h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .news-item {
+            background-color: white;
+            border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 20px;
         }
 
-        #events-section {
-            padding: 20px;
-            margin: 20px auto;
-            max-width: 1200px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            position: relative;
-        }
-
-        #events-section img {
-            width: 40%;
-            height: auto;
+        .news-item img {
+            width: 100%;
+            object-fit: cover;
             border-radius: 10px;
         }
 
-        #events-section .green-box {
-            position: absolute;
-            z-index: -1;
-            left: 10%;
-            top: 400px;
-            width: 700px;
+        .news-content {
+            padding: 15px;
         }
 
-        .events-box {
-            background-color: rgb(0, 146, 0);
-            color: #f2f2f2;
-            padding: 20px;
-            border-radius: 0px 0px 0px 50px;
-            width: 33%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            position: relative;
-            z-index: 1;
+        .news-content h3 {
+            font-size: 1.2em;
+            margin: 0 0 10px;
+        }
+
+        .news-content p {
+            font-size: 0.9em;
+            color: #666;
+            margin: 0 0 10px;
+        }
+
+        .news-content span {
+            font-size: 0.8em;
+            color: #888;
         }
 
         footer {
@@ -188,63 +218,11 @@
             margin: 0 10px;
         }
 
-        .news-section {
-            padding: 40px 20px;
-            background-color: transparent;
-        }
-
-
-        .news-section h2 {
-            text-align: center;
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-
-        .news-grid {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .news-item {
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            width: 30%;
-            min-width: 280px;
-        }
-
-        .news-item img {
-            width: 100%;
-            aspect-ratio: 1 / 1;
-            object-fit: cover;
-            border-radius: 10px;
-        }
-
-        .news-content {
-            padding: 15px;
-        }
-
-        .news-content h3 {
-            font-size: 1.2em;
-            margin: 0 0 10px;
-        }
-
-        .news-content p {
-            font-size: 0.9em;
-            color: #666;
-            margin: 0 0 10px;
-        }
-
-        .news-content span {
-            font-size: 0.8em;
-            color: #888;
-        }
     </style>
 </head>
+
 <body>
+
 <header>
     <img src="img/logowhiteimg.webp" alt="Klima Kompasset">
     <nav>
@@ -257,54 +235,79 @@
 
 <div class="hero">
     <div class="compass-container">
-        <img src="img/forsideimg-01.webp" alt="Klima Kompasset">
-        <a href="plastikreduktion.html" class="top-text">Plastikreduktion</a>
-        <a href="co2_reduktion.html" class="bottom-text">CO2 Reduktion</a>
-        <a href="genanvendelse.html" class="right-text">Genanvendelse</a>
-        <a href="energibesparelse.html" class="left-text">Energibesparelse</a>
+        <img src="img/heroklima.webp" alt="Klima Kompasset">
+
+        <!-- Top Button -->
+        <a href="plastikreduktion.html" class="btn btn-light top-button">Plastikreduktion</a>
+
+        <!-- Bottom Button -->
+        <a href="co2_reduktion.html" class="btn btn-light bottom-button">CO2 Reduktion</a>
+
+        <!-- Right Button -->
+        <a href="genanvendelse.html" class="btn btn-light right-button">Genanvendelse</a>
+
+        <!-- Left Button -->
+        <a href="energibesparelse.html" class="btn btn-light left-button">Energibesparelse</a>
     </div>
 </div>
 
 
-<div class="green-box">
-    <h2>Find vejen til en klimavenlig hverdag</h2>
-    <p>Klima kompasset er din personlige værktøjskasse, til at finde gode råd til at skabe en hverdag der gavner naturen. Naviger den klimavenlige verden med kompasset ovenover, og dyk dybere ned i de 4 primære emner indenfor bæredygtighed. Et skridt af gangen.</p>
-</div>
-
-<div id="events-section">
-    <img src="img/kalenderimg.webp" alt="Kalender billede">
-    <div class="green-box">
-        <h2>Kommende events</h2>
-        <p>Her finder du en oversigt over oplæg og events med fokus på klima og bæredygtighed, arrangeret af forskellige aktører.</p>
-        <a href="events.html" style="color: #f2f2f2; font-weight: bold;">Følg os</a>
+<div class="row">
+    <div class="col-md-5 ">
+        <div class="beskrivelse">
+            <h3>Find vejen til en klimavenlig hverdag</h3>
+            <p>Klima kompasset er din personlige værktøjskasse,
+                til at finde gode råd til at skabe en hverdag der gavner naturen.
+                Naviger den klimavenlige verden med kompasset ovenover, og dyk dybere ned i de
+                4 primære emner indenfor bæredygtighed. Et skridt af gangen. </p>
+        </div>
     </div>
 </div>
+
+<div class="row">
+    <div class="col-md-5 offset-md-7">
+        <div class="events">
+            <h3>Kommende events</h3>
+            <p>Følg Klima Kompasset på Facebook og Instagram, for at
+                finde kommende events, webinare, messer og kurser.</p>
+        </div>
+    </div>
+</div>
+
 
 <section class="news-section">
     <h2>Klima Nyheder</h2>
-    <div class="news-grid">
-        <div class="news-item">
-            <img src="img/kbhimg.webp" alt="København">
-            <div class="news-content">
-                <h3>Klimadialog om danskernes hverdagsvaner</h3>
-                <p>Blog</p>
-                <span>6. december 2024</span>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="news-item">
+                    <img src="img/kbhimg.webp" alt="København" class="img-fluid">
+                    <div class="news-content">
+                        <h3>Klimadialog om danskernes hverdagsvaner</h3>
+                        <p>Blog</p>
+                        <span>6. december 2024</span>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="news-item">
-            <img src="img/Artboard_1.webp" alt="Atomkraft">
-            <div class="news-content">
-                <h3>Sprinty atomkraft teknologi fra Kina. "Meltdown Proof"</h3>
-                <p>Nyhed</p>
-                <span>3. december 2024</span>
+            <div class="col">
+                <div class="news-item">
+                    <img src="img/Artboard_1.webp" alt="Atomkraft" class="img-fluid">
+                    <div class="news-content">
+                        <h3>Sprit ny atomkraft teknologi fra Kina. "Meltdown Proof"</h3>
+                        <p>Nyhed</p>
+                        <span>3. december 2024</span>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="news-item">
-            <img src="img/earth.webp" alt="Jorden">
-            <div class="news-content">
-                <h3>Bæredygtighed og klimaforandring. Et globalt perspektiv.</h3>
-                <p>Blog</p>
-                <span>29. november 2024</span>
+            <div class="col">
+                <div class="news-item">
+                    <img src="img/earth.webp" alt="Jorden" class="img-fluid">
+                    <div class="news-content">
+                        <h3>Bæredygtighed og klimaforandring. <br> Et globalt perspektiv.</h3>
+                        <p>Blog</p>
+                        <span>29. november 2024</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -334,5 +337,9 @@
         <p>Et skridt af gangen.</p>
     </div>
 </footer>
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plastikreduktion</title>
+    <title>Co2 Reduktion</title>
     <style>
-        /* General Styles */
         * {
             margin: 0;
             padding: 0;
@@ -57,28 +56,27 @@
         }
 
         .hero {
-            text-align: center;
             position: relative;
-            height: 250px;
-            overflow: hidden;
             display: flex;
-            align-items: center;
             justify-content: center;
-            color: #ffffff;
-            background: rgba(0, 0, 0, 0.5);
+            align-items: center;
+            height: 1000px; /* Juster højden som ønsket */
+            background: url('img/cykel.webp') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+        }
+
+        .hero .co2 {
+            position: absolute;
+            font-size: xx-large;
+            z-index: 1;
+            text-align: center;
         }
 
         .hero img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            position: absolute;
+            position: relative;
             z-index: -1;
-        }
-
-        .hero h1 {
-            font-size: 2.5em;
-            z-index: 1;
         }
 
         .content-container {
@@ -130,6 +128,10 @@
             height: 40px;
             margin: 0 10px;
         }
+
+        .co2{
+            font-size: xx-large;
+        }
     </style>
 </head>
 <body>
@@ -144,29 +146,27 @@
     </nav>
 </header>
 
-<div class="hero">
-    <img src="img/plasticimg.webp" alt="Plastikreduktion">
-    <h1>Plastikreduktion</h1>
+<div class="hero d-flex">
+    <img src="img/cykel.webp" alt="Co2 Reduktion" class="hidden">
+    <p class="co2 text text-center">Co2 Reduktion</p>
 </div>
 
 <div class="content-container">
     <div class="first-section">
-        <h2>Plastik er overalt</h2>
+        <h2>Tag cyklen</h2>
         <p>
-            Du tænker måske ikke over det, men rigtig mange af de produkter, som du bruger til hverdag, indeholder plastik.
-            Det er i vores tøj, vores møbler, vores kosmetik – ja selv vores frugter og grøntsager er pakket ind plastfolie.
+            En dansker udleder i gennemsnit  17 tusind kg altså 17 ton CO2 hvert år.
+            Transport er forbundet med store udledninger, og særligt fly udleder rigtig meget drivhusgas.
+            Det er derfor en god ide at overveje, om det er nødvendigt at flyve, når man skal på ferie, eller
+            om man kan tage bil, tog, bus eller allerbedst: cyklen.
         </p>
         <br>
         <p>
-            Og selvom plastik er et fantastisk materiale, der løser mange af dagligdagens udfordringer, så har det også en bagside.
-            Plast er nemlig lavet af olie, og når det brændes af som affald, bidrager det til klimaforandringerne.
+            Generelt kan man sige, at kører man flere sammen i en bil, eller hvis man kører i en elbil, så er det bedre at køre bil end at flyve, men de
+            fleste biler udleder dog stadig en del CO2. Bus og særligt tog, som nogle steder endda er elektriske, er som regel betydeligt mere klimavenlige
+            måder at komme fra et sted til et andet end både bil og fly.
         </p>
-        <br>
-        <p>
-            Ifølge Danmarks Naturfredningsforening smider en dansk husstand cirka 1 kg plast ud om ugen. Det bliver til ca. 50 kg plastik årligt.
-            Vi skal derfor blive bedre til at reducere vores forbrug af plast alle de steder, det giver mening og blive bedre til at styre helt uden
-            om det syntetiske materiale, hvor det er muligt.
-        </p>
+
         <br>
         <br>
         <br>
@@ -174,21 +174,22 @@
 
         <h2>Vil du vide mere?</h2>
         <p>
-            Udforsk siderne under for at finde endnu flere tips og tricks til at reducere plastikbrug i din hverdag:
+            Udforsk siderne under for at finde endnu flere tips og tricks til at reducere påvirkningen på vores klode i din hverdag
         </p>
         <ul>
-            <li><a href="https://simplysustain.dk/mindre-plastik/" target="_blank">Mindre Plastik - Simply Sustain</a></li>
-            <li><a href="https://plasticchange.dk/gode-raad/" target="_blank">Gode Råd - Plastic Change</a></li>
+            <li><a href="https://concito.dk/klimaambassaden/bliv-klimaklog/hvad-kan-man-selv-goere" target="_blank">Hvad kan man selv gøre? - Concito</a></li>
+            <li><a href="https://youth.europa.eu/get-involved/sustainable-development/how-reduce-my-carbon-footprint_da" target="_blank">Hvordan begrænser jeg mit CO2-fodaftryk? - Den Europæiske Union</a></li>
         </ul>
     </div>
     <div class="green-box">
-        <h3>Reducer brug af plastik i din hverdag</h3>
+        <h3>Reducer udledning af Co2 i din hverdag</h3>
         <ul>
-            <li>Sorter dit plastikaffald</li>
-            <li>Tag din egen pose med ud handle, eller genbrug plastikposen</li>
-            <li>Opbevar madrester i bøtter og glas</li>
-            <li>Skift plastikflasken ud med en drikkedunk</li>
-            <li>Brug bomuldsklud eller karklud uden mikroplast til opvask</li>
+            <li>Tag cyklen ud at handle</li>
+            <li>Brug EL drevet transport</li>
+            <li>Undgå madspild</li>
+            <li>Forlæng produkters levetid.</li>
+            <li>Giv videre, istedet for at smide ud</li>
+            <li>Hold et sundt indeklima, ved at lufte ud dagligt</li>
         </ul>
     </div>
 </div>

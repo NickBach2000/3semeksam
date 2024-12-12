@@ -56,29 +56,32 @@
         }
 
         .hero {
-            text-align: center;
             position: relative;
-            height: 250px;
-            overflow: hidden;
             display: flex;
-            align-items: center;
             justify-content: center;
-            color: #ffffff;
-            background: rgba(0, 0, 0, 0.5);
+            align-items: center;
+            height: 1000px; /* Juster højden som ønsket */
+            background: url('img/plasticimg.webp') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
         }
 
-        .hero img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        .hero .plastik {
             position: absolute;
+            font-size: xx-large;
+            z-index: 1;
+            text-align: center;
+        }
+
+
+
+        .hero img {
+            position: relative;
             z-index: -1;
         }
 
-        .hero h1 {
-            font-size: 2.5em;
-            z-index: 1;
-        }
+
 
         .content-container {
             display: flex;
@@ -129,6 +132,10 @@
             height: 40px;
             margin: 0 10px;
         }
+
+        .plastik{
+            font-size: xx-large;
+        }
     </style>
 </head>
 <body>
@@ -143,10 +150,12 @@
     </nav>
 </header>
 
-<div class="hero">
-    <img src="img/plasticimg.webp" alt="Plastikreduktion">
-    <h1>Plastikreduktion</h1>
+
+<div class="hero d-flex">
+    <img src="img/plasticimg.webp" alt="Plastikreduktion" class="hidden">
+    <p class="plastik text text-center">Plastikreduktion</p>
 </div>
+
 
 <div class="content-container">
     <div class="first-section">
@@ -173,7 +182,7 @@
 
         <h2>Vil du vide mere?</h2>
         <p>
-            Udforsk siderne under for at finde endnu flere tips og tricks til at reducere plastikbrug i din hverdag:
+            Udforsk siderne under for at finde endnu flere tips og tricks til at reducere plastikbrug i din hverdag
         </p>
         <ul>
             <li><a href="https://simplysustain.dk/mindre-plastik/" target="_blank">Mindre Plastik - Simply Sustain</a></li>

@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plastikreduktion</title>
+    <title>Genanvendelse</title>
     <style>
-        /* General Styles */
         * {
             margin: 0;
             padding: 0;
@@ -57,28 +56,27 @@
         }
 
         .hero {
-            text-align: center;
             position: relative;
-            height: 250px;
-            overflow: hidden;
             display: flex;
-            align-items: center;
             justify-content: center;
-            color: #ffffff;
-            background: rgba(0, 0, 0, 0.5);
+            align-items: center;
+            height: 1000px; /* Juster højden som ønsket */
+            background: url('img/genanvendimg.webp') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+        }
+
+        .hero .genanvend {
+            position: absolute;
+            font-size: xx-large;
+            z-index: 1;
+            text-align: center;
         }
 
         .hero img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            position: absolute;
+            position: relative;
             z-index: -1;
-        }
-
-        .hero h1 {
-            font-size: 2.5em;
-            z-index: 1;
         }
 
         .content-container {
@@ -130,6 +128,10 @@
             height: 40px;
             margin: 0 10px;
         }
+
+        .genanvend{
+            font-size: xx-large;
+        }
     </style>
 </head>
 <body>
@@ -144,29 +146,27 @@
     </nav>
 </header>
 
-<div class="hero">
-    <img src="img/plasticimg.webp" alt="Plastikreduktion">
-    <h1>Plastikreduktion</h1>
+<div class="hero d-flex">
+    <img src="img/genanvendimg.webp" alt="Genanvendelse" class="hidden">
+    <p class="genanvend text text-center">Genanvendelse</p>
 </div>
 
 <div class="content-container">
     <div class="first-section">
-        <h2>Plastik er overalt</h2>
+        <h2>Genbrug og genanvend</h2>
         <p>
-            Du tænker måske ikke over det, men rigtig mange af de produkter, som du bruger til hverdag, indeholder plastik.
-            Det er i vores tøj, vores møbler, vores kosmetik – ja selv vores frugter og grøntsager er pakket ind plastfolie.
+            Når vi genbruger og genanvender materialer og produkter, kan det hjælpe med at reducere affaldsmængden, som også vil skåne vores naturressourcer.
+            Her handler det om, at du får sorteret dit affald korrekt i papir, plastik, glas og bioaffald.
+            Du kan finde dine lokale genbrugsmuligheder og retningslinjer hos din kommune.
+
         </p>
         <br>
         <p>
-            Og selvom plastik er et fantastisk materiale, der løser mange af dagligdagens udfordringer, så har det også en bagside.
-            Plast er nemlig lavet af olie, og når det brændes af som affald, bidrager det til klimaforandringerne.
+            Traditionelt har man produceret og forbrugt varer i et lineært forløb, der starter med udvinding af ressourcer og ender som affald.
+            Men hvis vi forebygger affald, genbruger produkter og genanvender materialer, er vi med til at skabe en mere cirkulær økonomi. I en cirkulær økonomi vil de ressourcer,
+            som ellers ender som affald, indgå i produktionen igen og undgår dermed at forlade kredsløbet. Og derfra blive brændt og udsluppet som Co2 i vores atmosfære.
         </p>
-        <br>
-        <p>
-            Ifølge Danmarks Naturfredningsforening smider en dansk husstand cirka 1 kg plast ud om ugen. Det bliver til ca. 50 kg plastik årligt.
-            Vi skal derfor blive bedre til at reducere vores forbrug af plast alle de steder, det giver mening og blive bedre til at styre helt uden
-            om det syntetiske materiale, hvor det er muligt.
-        </p>
+
         <br>
         <br>
         <br>
@@ -174,21 +174,21 @@
 
         <h2>Vil du vide mere?</h2>
         <p>
-            Udforsk siderne under for at finde endnu flere tips og tricks til at reducere plastikbrug i din hverdag:
+            Udforsk siderne under for at finde endnu flere tips og tricks til at genanvende og forlænge dine produkters livscyklus
         </p>
         <ul>
-            <li><a href="https://simplysustain.dk/mindre-plastik/" target="_blank">Mindre Plastik - Simply Sustain</a></li>
-            <li><a href="https://plasticchange.dk/gode-raad/" target="_blank">Gode Råd - Plastic Change</a></li>
+            <li><a href="https://natureteam.dk/genbrug-i-hverdagen/" target="_blank">Genbrug i hverdagen - Nature Team</a></li>
+            <li><a href="https://mst.dk/borger/affald-og-forurening/sortering-af-affald/saadan-sorterer-du-dit-affald" target="_blank">Sådan sorterer du dit affald - Miljø- og Ligestillingsministeriet</a></li>
         </ul>
     </div>
     <div class="green-box">
-        <h3>Reducer brug af plastik i din hverdag</h3>
+        <h3>Reducer affald og forlæng produkters levetid</h3>
         <ul>
-            <li>Sorter dit plastikaffald</li>
-            <li>Tag din egen pose med ud handle, eller genbrug plastikposen</li>
-            <li>Opbevar madrester i bøtter og glas</li>
-            <li>Skift plastikflasken ud med en drikkedunk</li>
-            <li>Brug bomuldsklud eller karklud uden mikroplast til opvask</li>
+            <li>Pant dine dåser og flasker</li>
+            <li>Sorter affald i rest, bio, plast og pap.</li>
+            <li>Køb nemt nedbrydelige produkter</li>
+            <li>Giv videre istedet for at smide ud</li>
+            <li>Doner til organisationer</li>
         </ul>
     </div>
 </div>

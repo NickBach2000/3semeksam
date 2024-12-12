@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plastikreduktion</title>
+    <title>Energibesperelse</title>
     <style>
-        /* General Styles */
         * {
             margin: 0;
             padding: 0;
@@ -57,28 +56,27 @@
         }
 
         .hero {
-            text-align: center;
             position: relative;
-            height: 250px;
-            overflow: hidden;
             display: flex;
-            align-items: center;
             justify-content: center;
-            color: #ffffff;
-            background: rgba(0, 0, 0, 0.5);
+            align-items: center;
+            height: 1000px; /* Juster højden som ønsket */
+            background: url('img/kontakt.webp') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+        }
+
+        .hero .energi {
+            position: absolute;
+            font-size: xx-large;
+            z-index: 1;
+            text-align: center;
         }
 
         .hero img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            position: absolute;
+            position: relative;
             z-index: -1;
-        }
-
-        .hero h1 {
-            font-size: 2.5em;
-            z-index: 1;
         }
 
         .content-container {
@@ -130,6 +128,10 @@
             height: 40px;
             margin: 0 10px;
         }
+
+        .energi{
+            font-size: xx-large;
+        }
     </style>
 </head>
 <body>
@@ -144,9 +146,9 @@
     </nav>
 </header>
 
-<div class="hero">
-    <img src="img/stikkontakt.webp" alt="Energibesparelse">
-    <h1>Plastikreduktion</h1>
+<div class="hero d-flex">
+    <img src="img/kontakt.webp" alt="Energibesparelse" class="hidden">
+    <p class="energi text text-center">Energibesparelse</p>
 </div>
 
 <div class="content-container">
@@ -155,20 +157,20 @@
         <p>
             Et mindre forbrug er den bedste måde til at spare på energien og gøre energiregningen mindre, og på samme tid reducere din
             påvirkning af miljøet.
-
         </p>
         <br>
         <p>
-            Uanset hvilket el produkt du har, så kan du spare energi og penge ved at slukke lyset, når du forlader et rum og slukke helt for apparater, der er på stand by-funktion.
-            Du kan også skrue ned for de langtidsbagte retter, da ovnen er blandt de hårde hvidevarer, der bruger mest energi.
+            Uanset hvilket elprodukt du har, så kan du spare energi og penge ved at slukke lyset, når du forlader et rum og slukke helt
+            for apparater, der er på stand by-funktion. Du kan også skrue ned for de langtidsbagte retter, da ovnen er blandt de hårde hvidevarer,
+            der bruger mest energi.
             Eller skrue lidt ned for temperaturen i boligen. Tag en trøje og sutsko på fremfor at skrue en ekstra grad op.
-
         </p>
         <br>
         <p>
             De fleste danskere har allerede ganske mange energieffektive apparater, så det er ikke let at spare meget mere på strømmen.
             Men når du skifter strømforbrugende apparater - alt fra hårde hvidevarer til elpærer i dine lamper - så vælg de mest energieffektive.
         </p>
+
         <br>
         <br>
         <br>
