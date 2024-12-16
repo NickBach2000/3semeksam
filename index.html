@@ -44,35 +44,21 @@
             text-decoration: none;
             font-size: 16px;
         }
-
-        .hero-image {
-            text-align: center;
-
-        }
-
-        .hero-text {
-            text-align: center;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+        .beskrivelse, .events {
+            opacity: 0;  /* Start med at være usynlig */
+            transform: translateY(20px);  /* Startposition */
+            transition: opacity 1s ease, transform 1s ease;  /* Smooth overgang */
+            background-color: #009200;
+            border-radius: 0px 0px 40px 40px;
+            margin-top: 20px;
+            padding: 20px;
             color: white;
+            margin-left: 20px;
+            margin-right: 20px;
         }
-
-        .beskrivelse {
-            background-color: rgb(0, 146, 0);
-            color: white;
-            padding: 15px;
-            margin-left: 40px;
-            margin-top: 30px;
-            border-radius: 0px 50px 50px 0px;
-        }
-        .events {
-            background-color: rgb(0, 146, 0);
-            color: white;
-            padding: 15px;
-            margin-right: 40px;
-            border-radius: 50px 0px 0px 50px;
+        .visible {
+            opacity: 1;  /* Gør elementet synligt */
+            transform: translateY(0);
         }
         .hero {
             height: 85vh;
@@ -146,8 +132,6 @@
             background-color: #1E9CD7;
         }
 
-
-
         .news-section {
             padding: 40px 20px;
             background-color: transparent;
@@ -175,6 +159,7 @@
 
         .news-content {
             padding: 15px;
+
         }
 
         .news-content h3 {
@@ -227,7 +212,7 @@
     <img src="img/logowhiteimg.webp" alt="Klima Kompasset">
     <nav>
         <ul>
-            <li><a href="nyheder.html">Nyheder</a></li>
+            <li><a href="om_os.html">Om os</a></li>
             <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
     </nav>
@@ -283,7 +268,7 @@
                 <div class="news-item">
                     <img src="img/kbhimg.webp" alt="København" class="img-fluid">
                     <div class="news-content">
-                        <h3>Klimadialog om danskernes hverdagsvaner</h3>
+                        <h3>Klimadialog om danskernes hverdagsvaner. "Vaner skal ændres"</h3>
                         <p>Blog</p>
                         <span>6. december 2024</span>
                     </div>
@@ -320,10 +305,10 @@
     </div>
     <div>
         <h4>Genveje</h4>
-        <p>Plastikreduktion</p>
-        <p>Energibesparelse</p>
-        <p>Genanvendelse</p>
-        <p>CO2 Reduktion</p>
+        <p><a href="plastikreduktion.html">Plastikreduktion</a></p>
+        <p><a href="energibesparelse.html">Energibesparelse</a></p>
+        <p><a href="genanvendelse.html">Genanvendelse</a></p>
+        <p><a href="co2_reduktion.html">CO2 Reduktion</a></p>
     </div>
     <div>
         <h4>Adresse</h4>
@@ -338,8 +323,12 @@
     </div>
 </footer>
 
+
 <!-- Bootstrap 5 JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="fade_in.js"></script>
+
+
 </body>
 
 </html>
