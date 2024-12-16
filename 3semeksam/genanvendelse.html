@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genanvendelse</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            font-family: Ebrima, serif;
+            display: flex;
+            flex-direction: column;
+            background: url('img/flourishimg.webp') no-repeat center center fixed;
+            background-size: cover;
+            color: #4d4d4d;
+        }
+
+        header {
+            background-color: rgb(0, 146, 0);
+            color: #f2f2f2;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #f2f2f2;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .hero {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 1000px; /* Juster højden som ønsket */
+            background: url('img/genanvendimg.webp') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+        }
+
+        .hero .genanvend {
+            position: absolute;
+            font-size: xx-large;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .hero img {
+            position: relative;
+            z-index: -1;
+        }
+
+        .content-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            max-width: 1200px;
+            margin: 20px auto;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .first-section {
+            flex: 1 1 60%;
+            max-width: 600px;
+            color: black;
+        }
+
+        .green-box {
+            flex: 1 1 35%;
+            max-width: 400px;
+            background-color: rgb(0, 146, 0);
+            color: #f2f2f2;
+            padding: 30px;
+            border-radius: 0px 0px 50px 0px;
+        }
+
+        footer {
+            background-color: rgb(0, 146, 0);
+            color: #f2f2f2;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        footer div {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        footer a {
+            color: #f2f2f2;
+            text-decoration: none;
+        }
+
+        footer img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .genanvend{
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <a href="index.html">
+        <img src="img/logowhiteimg.webp" alt="Klima Kompasset">
+    </a>
+    <nav>
+        <ul>
+            <li><a href="om_os.html">Om os</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="hero d-flex">
+    <img src="img/genanvendimg.webp" alt="Genanvendelse" class="hidden">
+    <p class="genanvend text text-center">Genanvendelse</p>
+</div>
+
+<div class="content-container">
+    <div class="first-section">
+        <h2>Genbrug og genanvend</h2>
+        <p>
+            Når vi genbruger og genanvender materialer og produkter, kan det hjælpe med at reducere affaldsmængden, som også vil skåne vores naturressourcer.
+            Her handler det om, at du får sorteret dit affald korrekt i papir, plastik, glas og bioaffald.
+            Du kan finde dine lokale genbrugsmuligheder og retningslinjer hos din kommune.
+
+        </p>
+        <br>
+        <p>
+            Traditionelt har man produceret og forbrugt varer i et lineært forløb, der starter med udvinding af ressourcer og ender som affald.
+            Men hvis vi forebygger affald, genbruger produkter og genanvender materialer, er vi med til at skabe en mere cirkulær økonomi. I en cirkulær økonomi vil de ressourcer,
+            som ellers ender som affald, indgå i produktionen igen og undgår dermed at forlade kredsløbet. Og derfra blive brændt og udsluppet som Co2 i vores atmosfære.
+        </p>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <h2>Vil du vide mere?</h2>
+        <p>
+            Udforsk siderne under for at finde endnu flere tips og tricks til at genanvende og forlænge dine produkters livscyklus
+        </p>
+        <ul>
+            <li><a href="https://natureteam.dk/genbrug-i-hverdagen/" target="_blank">Genbrug i hverdagen - Nature Team</a></li>
+            <li><a href="https://mst.dk/borger/affald-og-forurening/sortering-af-affald/saadan-sorterer-du-dit-affald" target="_blank">Sådan sorterer du dit affald - Miljø- og Ligestillingsministeriet</a></li>
+        </ul>
+    </div>
+    <div class="green-box">
+        <h3>Reducer affald og forlæng produkters levetid</h3>
+        <ul>
+            <li>Pant dine dåser og flasker</li>
+            <li>Sorter affald i rest, bio, plast og pap.</li>
+            <li>Køb nemt nedbrydelige produkter</li>
+            <li>Giv videre istedet for at smide ud</li>
+            <li>Doner til organisationer</li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <div>
+        <img src="img/facebooklogo.webp" alt="Facebook">
+        <img src="img/instalogo.webp" alt="Instagram">
+    </div>
+    <div>
+        <h4>Genveje</h4>
+        <p><a href="plastikreduktion.html">Plastikreduktion</a></p>
+        <p><a href="energibesparelse.html">Energibesparelse</a></p>
+        <p><a href="genanvendelse.html">Genanvendelse</a></p>
+        <p><a href="co2_reduktion.html">CO2 Reduktion</a></p>
+    </div>
+    <div>
+        <h4>Adresse</h4>
+        <p>Løvegade 13</p>
+        <p>4200 Slagelse</p>
+        <p>klimakompasset@klima.dk</p>
+    </div>
+    <div>
+        <h4>Om Klima Kompasset</h4>
+        <p>Dit værktøj til en mere klimavenlig hverdag.</p>
+        <p>Et skridt af gangen.</p>
+    </div>
+</footer>
+
+</body>
+</html>

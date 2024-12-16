@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energibesperelse</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            font-family: Ebrima, serif;
+            display: flex;
+            flex-direction: column;
+            background: url('img/flourishimg.webp') no-repeat center center fixed;
+            background-size: cover;
+            color: #4d4d4d;
+        }
+
+        header {
+            background-color: rgb(0, 146, 0);
+            color: #f2f2f2;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #f2f2f2;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .hero {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 1000px; /* Juster højden som ønsket */
+            background: url('img/kontakt.webp') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+        }
+
+        .hero .energi {
+            position: absolute;
+            font-size: xx-large;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .hero img {
+            position: relative;
+            z-index: -1;
+        }
+
+        .content-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            max-width: 1200px;
+            margin: 20px auto;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .first-section {
+            flex: 1 1 60%;
+            max-width: 600px;
+            color: black;
+        }
+
+        .green-box {
+            flex: 1 1 35%;
+            max-width: 400px;
+            background-color: rgb(0, 146, 0);
+            color: #f2f2f2;
+            padding: 30px;
+            border-radius: 0px 0px 50px 0px;
+        }
+
+        footer {
+            background-color: rgb(0, 146, 0);
+            color: #f2f2f2;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        footer div {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        footer a {
+            color: #f2f2f2;
+            text-decoration: none;
+        }
+
+        footer img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .energi{
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <a href="index.html">
+        <img src="img/logowhiteimg.webp" alt="Klima Kompasset">
+    </a>
+    <nav>
+        <ul>
+            <li><a href="om_os.html">Om os</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="hero d-flex">
+    <img src="img/kontakt.webp" alt="Energibesparelse" class="hidden">
+    <p class="energi text text-center">Energibesparelse</p>
+</div>
+
+<div class="content-container">
+    <div class="first-section">
+        <h2>Sluk lyset, spar strøm</h2>
+        <p>
+            Et mindre forbrug er den bedste måde til at spare på energien og gøre energiregningen mindre, og på samme tid reducere din
+            påvirkning af miljøet.
+        </p>
+        <br>
+        <p>
+            Uanset hvilket elprodukt du har, så kan du spare energi og penge ved at slukke lyset, når du forlader et rum og slukke helt
+            for apparater, der er på stand by-funktion. Du kan også skrue ned for de langtidsbagte retter, da ovnen er blandt de hårde hvidevarer,
+            der bruger mest energi.
+            Eller skrue lidt ned for temperaturen i boligen. Tag en trøje og sutsko på fremfor at skrue en ekstra grad op.
+        </p>
+        <br>
+        <p>
+            De fleste danskere har allerede ganske mange energieffektive apparater, så det er ikke let at spare meget mere på strømmen.
+            Men når du skifter strømforbrugende apparater - alt fra hårde hvidevarer til elpærer i dine lamper - så vælg de mest energieffektive.
+        </p>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <h2>Vil du vide mere?</h2>
+        <p>
+            Udforsk siderne under for at finde endnu flere tips og tricks til at spare på energien i din hverdag
+        </p>
+        <ul>
+            <li><a href="https://sparenergi.dk/hverdag" target="_blank">Spar energi i hverdagen - SparEnergi</a></li>
+            <li><a href="https://greenpowerdenmark.dk/" target="_blank">En central del af den grønne omstilling - Green Power Denmark</a></li>
+        </ul>
+    </div>
+    <div class="green-box">
+        <h3>Reducer brug af energi i din hverdag</h3>
+        <ul>
+            <li>Fyld vaskemaskinen helt op</li>
+            <li>Vask tøj ved 20C eller 30C</li>
+            <li>Brug tørresnoren</li>
+            <li>Sluk lyset når du går</li>
+            <li>Hold 5C i køleskabet, og -18C i fryseren</li>
+            <li>Sluk mobilopladere</li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <div>
+        <img src="img/facebooklogo.webp" alt="Facebook">
+        <img src="img/instalogo.webp" alt="Instagram">
+    </div>
+    <div>
+        <h4>Genveje</h4>
+        <p><a href="plastikreduktion.html">Plastikreduktion</a></p>
+        <p><a href="energibesparelse.html">Energibesparelse</a></p>
+        <p><a href="genanvendelse.html">Genanvendelse</a></p>
+        <p><a href="co2_reduktion.html">CO2 Reduktion</a></p>
+    </div>
+    <div>
+        <h4>Adresse</h4>
+        <p>Løvegade 13</p>
+        <p>4200 Slagelse</p>
+        <p>klimakompasset@klima.dk</p>
+    </div>
+    <div>
+        <h4>Om Klima Kompasset</h4>
+        <p>Dit værktøj til en mere klimavenlig hverdag.</p>
+        <p>Et skridt af gangen.</p>
+    </div>
+</footer>
+
+</body>
+</html>
